@@ -28,3 +28,19 @@ updated（更新后）,
 beforeDestroy（销毁前）,
 
 destroyed（销毁后）
+
+4.如何编写高性能的 JavaScript？
+
+遵循严格模式："use strict";
+将 js 脚本放在页面底部，加快渲染页面
+将 js 脚本将脚本成组打包，减少请求
+使用非阻塞方式下载 js 脚本
+尽量使用局部变量来保存全局变量
+尽量减少使用闭包
+使用 window 对象属性方法时，省略 window
+尽量减少对象成员嵌套
+缓存 DOM 节点的访问
+通过避免使用 eval() 和 Function() 构造器
+给 setTimeout() 和 setInterval() 传递函数而不是字符串作为参数
+尽量使用直接量创建对象和数组
+最小化重绘(repaint)和回流(reflow)
